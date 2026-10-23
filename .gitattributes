@@ -1,0 +1,17 @@
+# 统一换行符, 避免跨平台 checkout 出乱子
+* text=auto
+
+# 关键: PowerShell 脚本必须原样保留(带 UTF-8 BOM, 且不要做换行转换)。
+# 一旦 BOM 被破坏, Windows PowerShell 5.1 会按 ANSI 读取, 中文全变乱码并报语法错误。
+*.ps1 -text
+
+# 批处理保持原样(纯 ASCII, 不转换更安全)
+*.cmd -text
+
+# Python 源码显式声明
+*.py text eol=lf
+
+# 文档
+*.md text
+*.json text
+*.gitignore text

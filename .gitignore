@@ -1,0 +1,22 @@
+# ---- 运行时生成的文件, 不要提交 ----
+
+# 服务运行日志(会不断增长)
+relay.log
+relay.log.*
+
+# 你的原 DNS 备份里包含本机网络配置(内网网段/校园DNS地址), 属于个人环境信息
+dns_backup.txt
+
+# 你的实际配置(学校域名/网卡名)
+config.json
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 编辑器/系统杂物
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
